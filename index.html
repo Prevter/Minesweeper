@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Minesweeper</title>
+	</head>
+	<body>
+		<style>
+			*{
+				padding: 20px;
+				font-size: 32px;
+				margin-top: 10px;
+			}
+			label {
+				padding: 10px;
+			}
+			.tool{
+				display: none;
+				margin: 0px;
+			}
+			label button{
+				margin-right:0px;
+			}
+			label{
+				margin: 0px;
+			}
+			canvas{
+				margin: 0px;
+				padding: 0px;
+				margin-top: 0px;
+			}
+		</style>
+		<canvas id="game"></canvas>
+		<script src="game.js"></script><br>
+		<label><button onclick="selTool(0)">Open tool</button></label></label><button onclick="selTool(1)">Flag tool</button></label>
+		<br><button onclick="start()">Restart</button>
+		<br>Bombs: <input type="number" onchange="setBombs(this.value)" value="50">
+		<br>Width: <input type="number" onchange="setWidth(this.value)" value="15"> 
+		<br>Height: <input type="number" onchange="setHeight(this.value)" value="10">
+	</body>
+</html>
