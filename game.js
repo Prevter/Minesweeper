@@ -140,6 +140,7 @@ function start(){
 	cells = [];
 	bombs = [];
 	tool = 0;
+	finishOnce = false;
 	for (var y=0; y < height; y++){
 		lineX = [];
 		for (var x=0; x < width; x++){
@@ -177,8 +178,9 @@ function update(){
 			finished = false;
 		}
 	});
-	if(finished){
+	if(finished && !finishOnce){
 		alert("You win!");
+		finishOnce = true;
 	}
 }
 
