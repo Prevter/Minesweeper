@@ -178,7 +178,7 @@ function update(){
 			finished = ++;
 		}
 	});
-	if(finished==bombsCount && !finishOnce && ){
+	if(finished==bombsCount && !finishOnce ){
 		alert("You win!");
 		finishOnce = true;
 	}
