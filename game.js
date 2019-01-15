@@ -172,13 +172,13 @@ function update(){
 			cell.show();
 		});
 	});
-	finished=true;
+	finished=0
 	bombs.forEach(function(b) {
-		if(!cells[b[1]][b[0]].flag){
-			finished = false;
+		if(cells[b[1]][b[0]].flag){
+			finished = ++;
 		}
 	});
-	if(finished && !finishOnce){
+	if(finished==bombsCount && !finishOnce && ){
 		alert("You win!");
 		finishOnce = true;
 	}
