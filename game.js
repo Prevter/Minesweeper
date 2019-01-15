@@ -175,7 +175,7 @@ function update(){
 	finished=0
 	bombs.forEach(function(b) {
 		if(cells[b[1]][b[0]].flag){
-			finished = ++;
+			finished++;
 		}
 	});
 	if(finished==bombsCount && !finishOnce ){
